@@ -1,0 +1,49 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "cross-env currentEnv=dev MOCK=none umi dev",
+        "build-test": "cross-env currentEnv=test umi build",
+        "build-prd": "cross-env currentEnv=prd umi build",
+        "mock": "cross-env currentEnv=dev umi dev",
+        "ana": "cross-env ANALYZE=1 currentEnv=test umi build",
+        "postinstall": "umi generate tmp",
+        "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+        "test": "umi-test",
+        "test:coverage": "umi-test --coverage"
+    },
+    "gitHooks": {
+        "pre-commit": "lint-staged"
+    },
+    "lint-staged": {
+        "*.{js,jsx,less,md,json}": [
+            "prettier --write"
+        ],
+        "*.ts?(x)": [
+            "prettier --parser=typescript --write"
+        ]
+    },
+    "dependencies": {
+        "antd": "^4.16.6",
+        "@ant-design/pro-layout": "^6.21.1",
+        "classnames": "^2.3.1",
+        "dayjs": "^1.10.6",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
+    },
+    "devDependencies": {
+        "@types/classnames": "^2.3.1",
+        "@types/react": "^17.0.13",
+        "@types/react-dom": "^17.0.8",
+        "@umijs/fabric": "^2.6.2",
+        "@umijs/plugin-sass": "^1.1.1",
+        "@umijs/preset-react": "^1.8.14",
+        "@umijs/test": "^3.5.3",
+        "cross-env": "^7.0.3",
+        "lint-staged": "^11.0.0",
+        "node-sass": "4.14.1",
+        "prettier": "^2.3.2",
+        "typescript": "^4.3.5",
+        "umi": "^3.5.3",
+        "yorkie": "^2.0.0"
+    }
+}
