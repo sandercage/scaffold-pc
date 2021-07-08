@@ -1,0 +1,9 @@
+.#{$classPre}-user-info-panel {
+    justify-content: flex-end;
+    .item {
+        margin-right: 10px;
+        &.shop-name {
+            font-weight: 600;
+        }
+    }
+}

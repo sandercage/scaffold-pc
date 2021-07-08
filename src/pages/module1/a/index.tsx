@@ -1,11 +1,28 @@
+import PageContainer from '@/components/system/page-container'
+import { SaveOutlined } from '@ant-design/icons'
+import { Button } from 'antd'
 import React from 'react'
-import styles from './index.scss'
+import './index.scss'
 
 const IndexPage: React.FC = () => {
+    const pageContainerWrapperProps = React.useMemo(() => {
+        return {
+            header: {
+                className: `${classPre}-cbl-report-page-header`,
+                title: '页面标题',
+                breadcrumb: {},
+            },
+            footer: [
+                <Button key='submit' type='primary' shape='round' icon={<SaveOutlined />}>
+                    保存
+                </Button>,
+            ],
+        }
+    }, [])
     return (
-        <div>
-            <h1 className={styles.title}>Page a</h1>
-        </div>
+        <PageContainer {...pageContainerWrapperProps}>
+            <div className={`${classPre}-page`}>Page a</div>
+        </PageContainer>
     )
 }
 

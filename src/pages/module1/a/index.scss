@@ -1,3 +1,4 @@
-.title {
-    background: $primaryColor;
+.#{$classPre}-page {
+    background-color: white;
+    color: $primaryColor;
 }

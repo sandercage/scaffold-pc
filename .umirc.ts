@@ -1,6 +1,6 @@
 import { BasicLayoutProps } from '@ant-design/pro-layout'
 import { defineConfig } from 'umi'
-import { API_BASE_URL, BASE_HOST, isDev } from './src/configs/env'
+import { API_BASE_URL, BASE_HOST } from './src/configs/env'
 import { routes } from './src/configs/route'
 import { globalVar, sassVariables } from './src/configs/system'
 
@@ -53,5 +53,4 @@ export default defineConfig({
         },
     },
     fastRefresh: {},
-    dva: false,
 })
