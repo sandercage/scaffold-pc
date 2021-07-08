@@ -1,10 +1,11 @@
-import { PageContainer, PageContainerProps } from '@ant-design/pro-layout'
-import { Route } from 'antd/lib/breadcrumb/Breadcrumb'
+import type { PageContainerProps } from '@ant-design/pro-layout'
+import { PageContainer } from '@ant-design/pro-layout'
+import type { Route } from 'antd/lib/breadcrumb/Breadcrumb'
 import React from 'react'
 import { Link } from 'umi'
 import './index.scss'
 
-const itemRender = (route: Route, params: any, routes: Array<Route>, paths: Array<string>) => {
+const itemRender = (route: Route, params: any, routes: Route[]) => {
     const last = routes.indexOf(route) === routes.length - 1
     return last ? (
         <span>{route.breadcrumbName}</span>
