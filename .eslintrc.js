@@ -26,6 +26,7 @@ module.exports = {
         'react/no-array-index-key': 'off',
         // 其他
         'eslint-comments/no-unlimited-disable': 'off',
+        '@typescript-eslint/no-namespace': { allowDeclarations: true, allowDefinitionFiles: false },
     },
     overrides: [
         {
