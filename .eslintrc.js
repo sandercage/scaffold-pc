@@ -26,15 +26,17 @@ module.exports = {
         'react/no-array-index-key': 'off',
         // 其他
         'eslint-comments/no-unlimited-disable': 'off',
-        '@typescript-eslint/no-namespace': { allowDeclarations: true, allowDefinitionFiles: false },
+        '@typescript-eslint/no-namespace': 'off',
+        '@typescript-eslint/consistent-type-imports': 'off',
+        'no-restricted-syntax': 'off'
     },
     overrides: [
         {
             files: ['**/*.d.ts'],
             rules: {
                 '@typescript-eslint/no-unused-vars': 'off',
-                'no-redeclare': 'off',
-            },
-        },
-    ],
+                'no-redeclare': 'off'
+            }
+        }
+    ]
 }

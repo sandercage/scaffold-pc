@@ -3,7 +3,7 @@ const fabric = require('@umijs/fabric')
 module.exports = {
     ...fabric.prettier,
     singleQuote: true,
-    trailingComma: 'all',
+    trailingComma: 'none',
     printWidth: 100,
     semi: false,
     tabWidth: 4,
@@ -11,7 +11,7 @@ module.exports = {
     overrides: [
         {
             files: '.prettierrc',
-            options: { parser: 'json', tabWidth: 4 },
-        },
-    ],
+            options: { parser: 'json', tabWidth: 4 }
+        }
+    ]
 }
