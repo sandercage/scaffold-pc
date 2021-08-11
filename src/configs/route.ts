@@ -6,76 +6,78 @@ export const routes: IBestAFSRoute[] = [
         path: '/module1',
         menu: {
             name: '一级菜单1',
-            icon: 'shop',
+            icon: 'shop'
         },
         routes: [
             {
                 path: '/module1/a',
                 component: '@/pages/module1/a/index',
                 menu: {
-                    name: '二级菜单1',
+                    name: '二级菜单1'
                 },
                 layout: {
-                    hideFooter: true,
+                    hideFooter: true
                 },
                 config: {
-                    initialLoading: false,
-                },
+                    initialLoading: false
+                }
             },
             {
                 path: '/module1/b',
                 component: '@/pages/module1/b/index',
                 menu: {
-                    name: '二级菜单2',
+                    name: '二级菜单2'
                 },
+
                 layout: {
-                    hideFooter: true,
+                    hideFooter: true
                 },
                 config: {
-                    initialLoading: false,
-                },
+                    initialLoading: false
+                }
             },
             {
                 path: '/module1/b/:id',
                 component: '@/pages/module1/b/[$id]/index',
                 menu: false,
                 layout: {
-                    hideFooter: true,
+                    hideFooter: true
                 },
                 config: {
-                    initialLoading: false,
-                },
-            },
-        ],
+                    initialLoading: false
+                }
+            }
+        ]
     },
     {
         path: '/module2',
         menu: {
             name: '一级菜单2',
-            icon: 'shop',
+            icon: 'shop'
         },
         routes: [
             {
                 path: '/module2/c',
                 component: '@/pages/module2/c/index',
                 menu: {
-                    name: '二级菜单3',
+                    name: '二级菜单3'
                 },
+                access: 'TEST',
                 layout: {
-                    hideFooter: true,
+                    hideFooter: true
                 },
                 config: {
-                    initialLoading: false,
-                },
-            },
-        ],
+                    initialLoading: false
+                }
+            }
+        ]
     },
     {
         path: '/login',
         component: '@/pages/login/index',
         layout: {
             hideMenu: true,
-            hideNav: true,
-        },
-    },
+            hideNav: true
+        }
+    }
 ]

@@ -1991,6 +1991,11 @@
     stylelint-order "^4.0.0"
     typescript "^4.0.2"
 
+"@umijs/plugin-access@^2.4.2":
+  version "2.4.2"
+  resolved "https://registry.nlark.com/@umijs/plugin-access/download/@umijs/plugin-access-2.4.2.tgz#0bc4b63d9dc0a2a04a303a352556721c891a8b30"
+  integrity sha1-C8S2PZ3AoqBKMDo1JVZyHIkaizA=
+
 "@umijs/plugin-antd@^0.10.0":
   version "0.10.0"
   resolved "https://registry.nlark.com/@umijs/plugin-antd/download/@umijs/plugin-antd-0.10.0.tgz#affc422825771150750d2aca042c26dbff11b8de"
